@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.ness.config.WebDriverListener"/>
+  </listeners>
+  <test name="Test(failed)">
+    <parameter name="Browser" value="Chrome"/>
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.ness.tests.GenerateReports">
+        <methods>
+          <include name="verifyClassRatingsReportDownload" invocation-numbers="0"/>
+          <include name="verifyClassProfileReportDownload" invocation-numbers="0"/>
+          <include name="verifyChecklistReportDownload" invocation-numbers="0"/>
+          <include name="verifyClassChecklistReportDownload" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ness.tests.GenerateReports -->
+      <class name="com.ness.tests.ManageSummaryReportsOunce">
+        <methods>
+          <include name="verifyDownloadObsRecordEnglishPdf" invocation-numbers="0"/>
+          <include name="verifyDownloadOunceSummaryEnglishPdf" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ness.tests.ManageSummaryReportsOunce -->
+      <class name="com.ness.tests.ManageLocations">
+        <methods>
+          <include name="verifyAddSiteLocation"/>
+          <include name="verifyAddProgLocation"/>
+          <include name="verifyDeleteLocation"/>
+          <include name="verifyMoveLocation" invocation-numbers="0"/>
+          <include name="verifyMoveButtonDisabled"/>
+        </methods>
+      </class> <!-- com.ness.tests.ManageLocations -->
+      <class name="com.ness.tests.ManageLocationsOunce">
+        <methods>
+          <include name="verifyDeleteLocationOunce"/>
+          <include name="verifyAddProgLocationOunce"/>
+          <include name="verifyMoveLocationOunce" invocation-numbers="0"/>
+          <include name="verifySaveWithoutDataOunce" invocation-numbers="0"/>
+          <include name="verifyMoveButtonDisabledOunce"/>
+          <include name="verifyAddSiteLocationOunce"/>
+        </methods>
+      </class> <!-- com.ness.tests.ManageLocationsOunce -->
+      <class name="com.ness.tests.DevelopmentalProfile">
+        <methods>
+          <include name="verifyAutoSaveCommentsOunce" invocation-numbers="0"/>
+          <include name="verifyNavigationViaManageDevProfile" invocation-numbers="0"/>
+          <include name="verifyDeleteDevProfile" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ness.tests.DevelopmentalProfile -->
+      <class name="com.ness.tests.ManageChildren">
+        <methods>
+          <include name="verifyDeleteChild"/>
+          <include name="addChildAdminSide" invocation-numbers="0"/>
+          <include name="verifyAddExistingChild"/>
+          <include name="verifyUndeleteOunce" invocation-numbers="0"/>
+          <include name="verifyDeleteChildAdminSide"/>
+          <include name="verifyRemoveFromClassChild"/>
+          <include name="addChild" invocation-numbers="0"/>
+          <include name="verifyArchiveChild"/>
+          <include name="verifyAddToClassAdminSideOunce"/>
+          <include name="verifyEditChildAdminSide"/>
+        </methods>
+      </class> <!-- com.ness.tests.ManageChildren -->
+      <class name="com.ness.tests.Observation">
+        <methods>
+          <include name="verifyDefaultPeriod" invocation-numbers="0"/>
+          <include name="verifyAttachmentNameAsTitle" invocation-numbers="0"/>
+          <include name="verifyObservationPdf" invocation-numbers="0"/>
+          <include name="addDescriptionWithoutStudentSelect" invocation-numbers="0"/>
+          <include name="verifyDeleteAttachment" invocation-numbers="0"/>
+          <include name="deleteObservationPresent" invocation-numbers="0"/>
+          <include name="editStudentInObservation" invocation-numbers="0"/>
+          <include name="verifyDesciptionCounter" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ness.tests.Observation -->
+      <class name="com.ness.tests.ManageSummaryReports">
+        <methods>
+          <include name="verifyPopulateChecklistWithClearedScores"/>
+          <include name="verifyPopulateChecklistWithClearedScoresHS"/>
+          <include name="verifyDownloadNarrativeSummaryEnglishPdf" invocation-numbers="0"/>
+          <include name="verifyPopulateChecklistWhenInIntermediateState" invocation-numbers="0"/>
+          <include name="verifyPopulateChecklistWithDeletedScoresHS"/>
+          <include name="verifyPopulateChecklistWhenInIntermediateStateHS"/>
+          <include name="verifyDownloadHSFSEnglishPdf" invocation-numbers="0"/>
+          <include name="verifyPopulateChecklistWithPartialScoresHS" invocation-numbers="0"/>
+          <include name="verifyDownloadStandardSummaryEnglishPdf" invocation-numbers="0"/>
+          <include name="verifyDownloadHSSummarySpanishPdf" invocation-numbers="0"/>
+          <include name="verifyPopulateChecklistWithExistingScoresHS"/>
+          <include name="verifyDownloadStandardSummarySpanishPdf" invocation-numbers="0"/>
+          <include name="verifyDownloadHSSummaryEnglishPdf" invocation-numbers="0"/>
+          <include name="verifyDownloadHSFSSpanishPdf" invocation-numbers="0"/>
+          <include name="verifyDownloadClassSummaryEnglishPdf" invocation-numbers="0"/>
+          <include name="verifyDownloadNarrativeSummarySpanishPdf" invocation-numbers="0"/>
+          <include name="verifyPopulateChecklistWithPartialScores" invocation-numbers="0"/>
+          <include name="verifyPopulateChecklistWithDeletedScores"/>
+          <include name="verifyPopulateChecklistWithExistingScores"/>
+        </methods>
+      </class> <!-- com.ness.tests.ManageSummaryReports -->
+      <class name="com.ness.tests.Checklists">
+        <methods>
+          <include name="verifyNextPreviousLinks" invocation-numbers="0"/>
+          <include name="verifyDeleteChecklist" invocation-numbers="0"/>
+          <include name="verifyAutoSaveComments" invocation-numbers="0"/>
+          <include name="verifyNavigationViaManageChecklist" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ness.tests.Checklists -->
+      <class name="com.ness.tests.ObservationOunce">
+        <methods>
+          <include name="addIndicatorsWithoutChildSelect" invocation-numbers="0"/>
+          <include name="verifyStudentFilterOunce" invocation-numbers="0"/>
+          <include name="addDescriptionWithoutTitleOunce" invocation-numbers="0"/>
+          <include name="verifyChildrenFilterAfterRemoveChild" invocation-numbers="0"/>
+          <include name="editStudentInObservationOunce" invocation-numbers="0"/>
+          <include name="verifyAttachmentNameAsTitleOunce" invocation-numbers="0"/>
+          <include name="verifyDeleteAttachmentOunce" invocation-numbers="0"/>
+          <include name="verifyObservationPdfOunce" invocation-numbers="0"/>
+          <include name="verifyAddedAttachmentOunce" invocation-numbers="0"/>
+          <include name="verifyNoDescriptionAddedTextOunce" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ness.tests.ObservationOunce -->
+      <class name="com.ness.tests.GenerateReportsOunce">
+        <methods>
+          <include name="verifyDevProfileReportDownload" invocation-numbers="0"/>
+          <include name="verifyClassProfileOunceReportDownload" invocation-numbers="0"/>
+          <include name="verifyAgeLevelExpiryDateReportDownload" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.ness.tests.GenerateReportsOunce -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

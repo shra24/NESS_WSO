@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.ness.config.WebDriverListener"></listener>
+	</listeners>
+
+	<test name="Test">
+		<parameter name="Browser" value="Chrome"></parameter>
+
+		<groups>
+			<run>
+				<include name="Sanity" />
+				<include name="Regression" />
+			</run>
+		</groups>
+
+		<classes>
+			<class name="com.ness.tests.Observation"></class>
+			<class name="com.ness.tests.Checklists"></class>
+			<class name="com.ness.tests.ManageSummaryReports"></class>
+			<class name="com.ness.tests.ManageStudents"></class>
+			<class name="com.ness.tests.ManageChildren"></class>
+			<class name="com.ness.tests.ObservationOunce"></class>
+			<class name="com.ness.tests.DevelopmentalProfile"></class>
+			<class name="com.ness.tests.ManageSummaryReportsOunce"></class>
+			<class name="com.ness.tests.GenerateReports"></class>
+			<class name="com.ness.tests.GenerateReportsOunce"></class>
+			<class name="com.ness.tests.Dashboard"></class>
+			<class name="com.ness.tests.DashboardOunce"></class>
+			<class name="com.ness.tests.ManageUsers"></class>
+			<class name="com.ness.tests.ManageUsersOunce"></class>
+			<class name="com.ness.tests.ManageLocations"></class>
+			<class name="com.ness.tests.ManageLocationsOunce"></class>
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
+
